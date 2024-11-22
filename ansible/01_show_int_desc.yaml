@@ -1,0 +1,17 @@
+---
+- name: Executa "show int description" e exibe os resultados na tela
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Executa comando "show interface description"
+      ansible.netcommon.cli_command:
+        command: show interface description
+      register: output
+    - name: Exibe os resultados
+      debug:
+        var: output.stdout
+      when: 
+        - inventory_hostname == 'Router'
+
+

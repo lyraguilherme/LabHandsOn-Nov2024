@@ -1,0 +1,11 @@
+---
+- get_facts:
+    os_version: "Linux Software (X86_64BI_LINUX-ADVENTERPRISEK9-M), Version 17.12.1, RELEASE SOFTWARE (fc5)"
+    hostname: R11
+    interface_list:
+      _mode: strict
+      list:
+        - Ethernet0/0
+        - Ethernet0/0.100
+        - Ethernet1/3
+        - Loopback0

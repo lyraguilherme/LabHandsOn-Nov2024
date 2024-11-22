@@ -1,0 +1,46 @@
+---
+Router:
+    hostname: 192.168.0.253
+    platform: ios
+    groups:
+      - router
+R11:
+    hostname: 192.168.0.211
+    platform: ios
+    groups:
+      - router
+R12:
+    hostname: 192.168.0.212
+    platform: ios
+    groups:
+      - router
+R13:
+    hostname: 192.168.0.213
+    platform: ios
+    groups:
+      - router
+R14:
+    hostname: 192.168.0.214
+    platform: ios
+    groups:
+      - router
+SW1:
+    hostname: 192.168.0.201
+    platform: ios
+    groups:
+      - switch
+SW2:
+    hostname: 192.168.0.202
+    platform: ios
+    groups:
+      - switch
+SW3:
+    hostname: 192.168.0.203
+    platform: ios
+    groups:
+      - switch
+SW4:
+    hostname: 192.168.0.204
+    platform: ios
+    groups:
+      - switch

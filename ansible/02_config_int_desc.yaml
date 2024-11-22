@@ -1,0 +1,14 @@
+---
+- name: Configurar description em interface
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+    - name: Description interface GigabitEthernet0/0/1 do host "Router"
+      cisco.ios.ios_interfaces:
+        config:
+          - name: GigabitEthernet0/0/1
+            description: 'CONFIGURADO COM ANSIBLE'
+        state: merged
+      when: 
+        - inventory_hostname == 'Router'
